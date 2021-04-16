@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="vendor/normalize.css">
+   <link rel="stylesheet" href="pages/style.css">
+   <title>Место</title>
+</head>
+<body>
+   <header class="header">
+      <div class="logo"></div>
+   </header>
+   <main class="content">
+      <section class="profile">
+         <img class="avatar" src="./images/Jak-Iv_Custo.jpg" alt="Жак-Ив Кусто">
+         <div class="profile-info">
+            <h1 class="profile-info__title">Жак-Ив Кусто</h1>
+            <p class="profile-info__subtitle">Исследовать океан</p>
+            <button class="profile-info__button"></button>
+         </div>
+         <button class="addButton"></button>
+      </section>
+      <section class="table">
+         <div class="table__element">
+            <img class="table__image" src="./images/karachaevsk.png" alt="Карачаевск">
+            <h2 class="table__title">Карачаевск</h2>
+            <div class="table__icon"></div>
+         </div>
+         <div class="table__element">
+            <img class="table__image" src="./images/albrus.png" alt="Гора-Эльбрус">
+            <h2 class="table__title">Гора Эльбрус</h2>
+            <div class="table__icon"></div>
+         </div>
+         <div class="table__element">
+            <img class="table__image" src="./images/dombai.png" alt="Домбай">
+            <h2 class="table__title">Домбай</h2>
+            <div class="table__icon"></div>
+         </div>
+         <div class="table__element">
+            <img class="table__image" src="./images/albrus.png" alt="Гора-Эльбрус">
+            <h2 class="table__title">Гора Эльбрус</h2>
+            <div class="table__icon"></div>
+         </div>
+         <div class="table__element">
+            <img class="table__image" src="./images/dombai.png" alt="Домбай">
+            <h2 class="table__title">Домбай</h2>
+            <div class="table__icon"></div>
+         </div>
+         <div class="table__element">
+            <img class="table__image" src="./images/karachaevsk.png" alt="Карачаевск">
+            <h2 class="table__title">Карачаевск</h2>
+            <div class="table__icon"></div>
+         </div>
+      </section>
+      <section class="popup popup_opened">
+         <form class="popup__container">
+            <h2 class="popup__title">Редактировать профиль</h2>
+            <div class="close-icon"></div>
+            <fieldset class="popup__input-container">
+               <input class="popup__item" type="text" name="name" placeholder="Жак-Ив Кусто" required>
+               <input class="popup__item" type="text" name="activity" placeholder="Исследователь океана" required>
+               <input class="popup__button" type="submit" name="submit">
+            </fieldset>
+         </form>
+      </section>
+   </main>
+   <footer class="footer">
+      <p class="copyright">&copy; 2021 Mesto Russia</p>
+   </footer>
+   </body>
+</html>
