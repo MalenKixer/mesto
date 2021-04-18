@@ -1,0 +1,22 @@
+.profile__subtitle{
+   height: fit-content;
+   font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 22px;
+   color: #FFFFFF;
+   margin: 16px 0 0;
+   padding: 0;
+}
+@media screen  and (max-width: 768px){
+   .profile__subtitle{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      color: #FFFFFF;
+      text-align: center;
+      margin: 14px 0 0;
+   }
+}
