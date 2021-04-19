@@ -10,6 +10,7 @@
    opacity: 1;
    border: 1px solid #FFFFFF;
    transition: opacity .3s ease;
+   cursor: pointer;
 }
 .profile__edit-button:hover{
    opacity: .6;

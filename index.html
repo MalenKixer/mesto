@@ -24,73 +24,55 @@
                <p class="profile__subtitle">Исследовать океан</p>
             </div>
          </div>
-         <button class="profile__add-button"></button>
+         <button class="profile__add-button" type="button"></button>
       </section>
       <section class="table">
          <div class="table__item">
             <img class="table__image" src="./images/karachaevsk.png" alt="Карачаевск">
-            <form class="table__description">
-               <h2 class="table__title">Карачаевск</h2>
-               <label for="checkbox" class="table__label">
-                  <input id="checkbox" class="table__icon" type="checkbox" name="like" value="like">
-                  <span class="table__icon-visiable"></span>
-               </label>
-            </form>
+            <div class="table__description">
+               <h2 class="table__title">Карачаевск</h2> 
+               <button class="table__icon" type="button"></button>           
+            </div>
          </div>
          <div class="table__item">
             <img class="table__image" src="./images/albrus.png" alt="Гора-Эльбрус">
-            <form class="table__description">
+            <div class="table__description">
                <h2 class="table__title">Гора Эльбрус</h2>
-               <label for="checkbox-2" class="table__label">
-                  <input id="checkbox-2" class="table__icon" type="checkbox" name="like" value="like">
-                  <span class="table__icon-visiable"></span>
-               </label>
-         </form>
+               <button class="table__icon" type="button"></button>
+            </div>
          </div>
          <div class="table__item">
             <img class="table__image" src="./images/dombai.png" alt="Домбай">
-            <form class="table__description">
+            <div class="table__description">
                <h2 class="table__title">Домбай</h2>
-               <label for="checkbox-3" class="table__label">
-                  <input id="checkbox-3" class="table__icon" type="checkbox" name="like" value="like">
-                  <span class="table__icon-visiable"></span>
-               </label>
-         </form>
+               <button class="table__icon" type="button"></button>
+            </div>
          </div>
          <div class="table__item">
             <img class="table__image" src="./images/albrus.png" alt="Гора-Эльбрус">
-            <form class="table__description">
+            <div class="table__description">
                <h2 class="table__title">Гора Эльбрус</h2>
-               <label for="checkbox-4" class="table__label">
-                  <input id="checkbox-4" class="table__icon" type="checkbox" name="like" value="like">
-                  <span class="table__icon-visiable"></span>
-               </label>
-            </form>
+               <button class="table__icon" type="button"></button>
+            </div>
          </div>
          <div class="table__item">
             <img class="table__image" src="./images/dombai.png" alt="Домбай">
-            <form class="table__description">
+            <div class="table__description">
                <h2 class="table__title">Домбай</h2>
-               <label for="checkbox-5" class="table__label">
-                  <input id="checkbox-5" class="table__icon" type="checkbox" name="like" value="like">
-                  <span class="table__icon-visiable"></span>
-            </label>
-            </form>
+               <button class="table__icon" type="button"></button>
+            </div>
          </div>
          <div class="table__item">
             <img class="table__image" src="./images/karachaevsk.png" alt="Карачаевск">
-            <form class="table__description">
+            <div class="table__description">
                <h2 class="table__title">Карачаевск</h2>
-               <label for="checkbox-6" class="table__label">
-                  <input id="checkbox-6" class="table__icon" type="checkbox" name="like" value="like">
-                  <span class="table__icon-visiable"></span>
-               </label>
-            </form>
+               <button class="table__icon" type="button"></button>
+            </div>
          </div>
       </section>
       <section class="popup">
-         <div class="close-icon"></div>
-         <form class="popup__container">
+         <button class="close-icon" type="button"></button>
+         <form name="redactor-container" value="redactor-container" class="popup__container">
             <h2 class="popup__title">Редактировать профиль</h2>
             <fieldset class="popup__input">
                <input class="popup__item popup__item_text_name" type="text" name="name" value="Жак-Ив Кусто" required>
@@ -98,7 +80,7 @@
             <fieldset class="popup__input">
                <input class="popup__item popup__item_text_activity" type="text" name="activity" value="Исследователь океана" required>
             </fieldset>
-               <input class="popup__button" type="submit" name="submit" value="Сохранить">
+               <button class="popup__button" type="submit" name="submit" value="submit">Сохранить</button>
          </form>
       </section>
    </main>
@@ -106,6 +88,6 @@
       <p class="footer__copyright">&copy; 2021 Mesto Russia</p>
    </footer>
    </div>
-   <script src="scritpt.js"></script>
+   <script src="./scripts/scritpt.js"></script>
    </body>
 </html>

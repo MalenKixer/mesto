@@ -1,7 +1,22 @@
 .table__icon{
-   position: absolute;
-   width: 1px;
-   height: 1px;
-   overflow: hidden;
-   clip: rect(0 0 0 0);
+   width: 22px;
+   height: 19px;
+   border: 0px;
+   align-self: center;
+   background-color: #FFF;
+   background-image: url(../../../images/Like.svg);
+   background-position: center;
+   background-size: cover;
+   transition: opacity .3s ease-out;
+}
+.table__icon:hover{
+   opacity: .5;
+}
+.table__icon:focus{
+   outline: 0px;
+   background-image: url(../../../images/like-checked.svg);
+}
+.table__icon:checked{
+   border: 0px;
+   background-image: url(../../../images/like-checked.svg);
 }
