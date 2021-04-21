@@ -1,9 +1,8 @@
 .page{
-   background-color: rgba(0, 0, 0, 1);
+   min-height: 100vh;
+   margin: auto;
    display: flex;
    flex-direction: column;
-   padding: 0 16%;
-   max-width: 1280px;
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
    -webkit-text-size-adjust: 100%;
@@ -12,6 +11,6 @@
 }
 @media screen  and (max-width: 768px){
    .page{
-      padding: 0 6%;
+      width: 88%;
    }   
 }

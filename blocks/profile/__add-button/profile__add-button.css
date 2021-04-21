@@ -4,10 +4,10 @@
    padding: 0;
    margin: 0;
    align-self: center;
-   background-image: url(../../../images/add-button3.svg);
-   background-size: cover;
+   background-image: url(../../../images/add-button.svg);
+   background-repeat: no-repeat;
    background-position: center;
-   background-color: rgba(0, 0, 0, 1);
+   background-color: rgba(0, 0, 0, 0);
    border: 2px solid #FFFFFF;
    border-radius: 2px;
    transition: opacity .3s ease;

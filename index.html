@@ -7,7 +7,7 @@
    <link rel="stylesheet" href="./pages/index.css">
    <title>Место</title>
 </head>
-<body>
+<body class="pages">
    <div class="page">
    <header class="header">
       <div class="logo"></div>
@@ -19,7 +19,7 @@
             <div class="profile__info">
                <div class="profile__title-redactor">
                   <h1 class="profile__title">Жак-Ив Кусто</h1>
-                  <button class="profile__edit-button"></button>
+                  <button class="profile__edit-button" type="button" aria-label="edit"></button>
                </div>
                <p class="profile__subtitle">Исследовать океан</p>
             </div>
@@ -27,66 +27,79 @@
          <button class="profile__add-button" type="button"></button>
       </section>
       <section class="table">
-         <div class="table__item">
-            <img class="table__image" src="./images/karachaevsk.png" alt="Карачаевск">
-            <div class="table__description">
-               <h2 class="table__title">Карачаевск</h2> 
-               <button class="table__icon" type="button"></button>           
+         <div class="place">
+            <img class="place__image" src="./images/karachaevsk.png" alt="Карачаевск">
+            <div class="place__description">
+               <h2 class="place__title">Карачаевск</h2> 
+               <button class="place__icon" type="button"  aria-label="like"></button>           
             </div>
          </div>
-         <div class="table__item">
-            <img class="table__image" src="./images/albrus.png" alt="Гора-Эльбрус">
-            <div class="table__description">
-               <h2 class="table__title">Гора Эльбрус</h2>
-               <button class="table__icon" type="button"></button>
+         <div class="place">
+            <img class="place__image" src="./images/albrus.png" alt="Гора-Эльбрус">
+            <div class="place__description">
+               <h2 class="place__title">Гора Эльбрус</h2>
+               <button class="place__icon" type="button"  aria-label="like"></button>
             </div>
          </div>
-         <div class="table__item">
-            <img class="table__image" src="./images/dombai.png" alt="Домбай">
-            <div class="table__description">
-               <h2 class="table__title">Домбай</h2>
-               <button class="table__icon" type="button"></button>
+         <div class="place">
+            <img class="place__image" src="./images/dombai.png" alt="Домбай">
+            <div class="place__description">
+               <h2 class="place__title">Домбай</h2>
+               <button class="place__icon" type="button"  aria-label="like"></button>
             </div>
          </div>
-         <div class="table__item">
-            <img class="table__image" src="./images/albrus.png" alt="Гора-Эльбрус">
-            <div class="table__description">
-               <h2 class="table__title">Гора Эльбрус</h2>
-               <button class="table__icon" type="button"></button>
+         <div class="place">
+            <img class="place__image" src="./images/albrus.png" alt="Гора-Эльбрус">
+            <div class="place__description">
+               <h2 class="place__title">Гора Эльбрус</h2>
+               <button class="place__icon" type="button"  aria-label="like"></button>
             </div>
          </div>
-         <div class="table__item">
-            <img class="table__image" src="./images/dombai.png" alt="Домбай">
-            <div class="table__description">
-               <h2 class="table__title">Домбай</h2>
-               <button class="table__icon" type="button"></button>
+         <div class="place">
+            <img class="place__image" src="./images/dombai.png" alt="Домбай">
+            <div class="place__description">
+               <h2 class="place__title">Домбай</h2>
+               <button class="place__icon" type="button"  aria-label="like"></button>
             </div>
          </div>
+<<<<<<< Updated upstream
+         <div class="place">
+            <img class="place__image" src="./images/karachaevsk.png" alt="Карачаевск">
+            <div class="place__description">
+               <h2 class="place__title">Карачаевск</h2>
+               <button class="place__icon" type="button"  aria-label="like"></button>
+=======
          <div class="table__item">
             <img class="table__image" src="./images/karachaevsk.png" alt="Карачаевск">
             <div class="table__description">
                <h2 class="table__title">Карачаевск</h2>
+               <label for="checkbox-6" class="table__label">
+                  <input id="checkbox-6" class="table__icon" type="checkbox" name="like" value="like">
+                  <span class="table__icon-visiable"></span>
+               </label>
+            </form>
                <button class="table__icon" type="button"></button>
+>>>>>>> Stashed changes
             </div>
          </div>
-      </section>
-      <section class="popup">
-         <button class="close-icon" type="button"></button>
-         <form name="redactor-container" value="redactor-container" class="popup__container">
-            <h2 class="popup__title">Редактировать профиль</h2>
-            <fieldset class="popup__input">
-               <input class="popup__item popup__item_text_name" type="text" name="name" value="Жак-Ив Кусто" required>
-            </fieldset>
-            <fieldset class="popup__input">
-               <input class="popup__item popup__item_text_activity" type="text" name="activity" value="Исследователь океана" required>
-            </fieldset>
-               <button class="popup__button" type="submit" name="submit" value="submit">Сохранить</button>
-         </form>
       </section>
    </main>
    <footer class="footer">
       <p class="footer__copyright">&copy; 2021 Mesto Russia</p>
    </footer>
+   <div class="popup">
+      <div class="popup__container">
+      <button class="popup__close-icon" type="button"  aria-label="close"></button>
+      <form class="popup__form" name="redactor-container">
+         <h2 class="popup__title">Редактировать профиль</h2>
+         <fieldset class="popup__input">
+            <input class="popup__item popup__item_text_name" type="text" name="name" value="Жак-Ив Кусто" required placeholder="Жак-Ив Кусто">
+            <input class="popup__item popup__item_text_activity" type="text" name="activity" value="Исследователь океана" required placeholder="Исследователь океана">
+         </fieldset>
+            <button class="popup__button" type="submit" name="submit" value="submit">Сохранить</button>
+      </form>
+      </div>
+   </div>
    </div>
    <script src="./scripts/scritpt.js"></script>
    </body>
