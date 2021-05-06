@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./pages/index.css">
+   <title>Место</title>
+</head>
+<body class="pages">
+   <div class="page">
+   <header class="header">
+      <div class="logo"></div>
+   </header>
+   <main class="content">
+      <section class="profile">
+         <div class="profile__description">
+            <img class="profile__avatar" src="./images/Jak-Iv_Custo.jpg" alt="Жак-Ив Кусто">
+            <div class="profile__info">
+               <div class="profile__title-redactor">
+                  <h1 class="profile__title">Жак-Ив Кусто</h1>
+                  <button class="profile__edit-button" type="button" aria-label="edit"></button>
+               </div>
+               <p class="profile__subtitle">Исследовать океан</p>
+            </div>
+         </div>
+         <button class="profile__add-button" type="button"></button>
+      </section>
+      <ul class="table">
+      <template id="place">
+         <li class="place">
+            <img class="place__image" src="" alt="">
+            <button class="place__delete-icon" type="button" aria-label="delete"></button>
+            <div class="place__description">
+               <h2 class="place__title"></h2> 
+               <button class="place__icon" type="button"  aria-label="like"></button>           
+            </div>
+         </li>
+      </template>
+      </ul>
+   </main>
+   <footer class="footer">
+      <p class="footer__copyright">&copy; 2021 Mesto Russia</p>
+   </footer>
+      <div class="popup popup_name_redactor">
+      <div class="popup__container">
+      <button class="popup__close-icon popup__close-icon_redactor_close" type="button"  aria-label="close"></button>
+      <form class="popup__form" name="redactor-container">
+         <h2 class="popup__title">Редактировать профиль</h2>
+         <fieldset class="popup__input">
+            <input class="popup__item popup__item_text_name" type="text" name="name"  required placeholder="Жак-Ив Кусто">
+            <input class="popup__item popup__item_text_activity" type="text" name="activity"brequired placeholder="Исследователь океана">
+         </fieldset>
+            <button class="popup__button" type="submit" name="submit" value="submit">Сохранить</button>
+      </form>
+      </div>
+   </div>
+   <div class="popup  popup_name_card">
+      <div class="popup__container">
+      <button class="popup__close-icon popup__close-icon_card_close" type="button"  aria-label="close"></button>
+      <form class="popup__form" name="redactor-container">
+         <h2 class="popup__title">Название</h2>
+         <fieldset class="popup__input">
+            <input class="popup__item popup__item_card_name" type="text" name="name"  required placeholder="Назавание">
+            <input class="popup__item popup__item_card_link" type="text" name="link"  required placeholder="Ссылка на картинку">
+         </fieldset>
+            <button class="popup__button" type="submit" name="submit" value="submit">Создать</button>
+      </form>
+      </div>
+   </div>
+      <div class="popup popup_name_image">
+         <div class="popup__container">
+            <button class="popup__close-icon popup__close-icon_image_close" type="button"  aria-label="close"></button>
+            <img class="popup__image" src="" alt="">
+            <p class="popup__subtitle"></p>
+         </div>
+      </div>
+   </div>
+   <script src="./scripts/scritpt.js"></script>
+   </body>
+</html>
