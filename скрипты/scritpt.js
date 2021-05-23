@@ -98,7 +98,6 @@ function getCardElement(name, link){
 };
 function renderCard(name, link, placeWrap){
    placeWrap.prepend(getCardElement(name, link));
-   disableSubmitButton(popupCard);
 }
 function closeByEscape(evt){
    if(evt.key === 'Escape'){
@@ -118,6 +117,7 @@ popupCard.addEventListener('submit', (evt) => {
    closePopup(popupCard);
    const inputList = Array.from(popupCard.querySelectorAll('.popup__input'));
    clearPopupInputs(inputList);
+   disableSubmitButton(popupCard);
 });
 
 editButton.addEventListener('click', () => {
