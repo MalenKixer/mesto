@@ -5,4 +5,4 @@
 
 ## В данном проекте применены техники: grid, flex, js.
 
-## [Ссылка на проект на GitHub]( https://malenkixer.github.io/mesto/index.html)
+## [Ссылка на проект на GitHub]( https://malenkixer.github.io/mesto/)
