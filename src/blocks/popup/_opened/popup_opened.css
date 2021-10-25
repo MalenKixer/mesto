@@ -1,0 +1,12 @@
+.popup_opened{
+   display: flex;
+   animation: displayPopup .3s ease-in-out;
+}
+@keyframes displayPopup {
+   from{
+      opacity: 0;
+   }
+   to{
+      opacity: 1;
+   }
+}
